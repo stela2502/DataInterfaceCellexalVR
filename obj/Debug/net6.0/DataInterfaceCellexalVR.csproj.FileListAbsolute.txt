@@ -1,0 +1,15 @@
+/home/med-sal/git_Projects/DataInterfaceCellexalVR/bin/Debug/net6.0/DataInterfaceCellexalVR
+/home/med-sal/git_Projects/DataInterfaceCellexalVR/bin/Debug/net6.0/DataInterfaceCellexalVR.deps.json
+/home/med-sal/git_Projects/DataInterfaceCellexalVR/bin/Debug/net6.0/DataInterfaceCellexalVR.runtimeconfig.json
+/home/med-sal/git_Projects/DataInterfaceCellexalVR/bin/Debug/net6.0/DataInterfaceCellexalVR.dll
+/home/med-sal/git_Projects/DataInterfaceCellexalVR/bin/Debug/net6.0/DataInterfaceCellexalVR.pdb
+/home/med-sal/git_Projects/DataInterfaceCellexalVR/obj/Debug/net6.0/DataInterfaceCellexalVR.csproj.AssemblyReference.cache
+/home/med-sal/git_Projects/DataInterfaceCellexalVR/obj/Debug/net6.0/DataInterfaceCellexalVR.GeneratedMSBuildEditorConfig.editorconfig
+/home/med-sal/git_Projects/DataInterfaceCellexalVR/obj/Debug/net6.0/DataInterfaceCellexalVR.AssemblyInfoInputs.cache
+/home/med-sal/git_Projects/DataInterfaceCellexalVR/obj/Debug/net6.0/DataInterfaceCellexalVR.AssemblyInfo.cs
+/home/med-sal/git_Projects/DataInterfaceCellexalVR/obj/Debug/net6.0/DataInterfaceCellexalVR.csproj.CoreCompileInputs.cache
+/home/med-sal/git_Projects/DataInterfaceCellexalVR/obj/Debug/net6.0/DataInterfaceCellexalVR.dll
+/home/med-sal/git_Projects/DataInterfaceCellexalVR/obj/Debug/net6.0/refint/DataInterfaceCellexalVR.dll
+/home/med-sal/git_Projects/DataInterfaceCellexalVR/obj/Debug/net6.0/DataInterfaceCellexalVR.pdb
+/home/med-sal/git_Projects/DataInterfaceCellexalVR/obj/Debug/net6.0/DataInterfaceCellexalVR.genruntimeconfig.cache
+/home/med-sal/git_Projects/DataInterfaceCellexalVR/obj/Debug/net6.0/ref/DataInterfaceCellexalVR.dll
