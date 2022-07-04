@@ -10,6 +10,7 @@ using Newtonsoft.Json.Linq;
 
 
 
+
 /*
 structure I need to parse here:
 ["{\"ids\":[\"HSPC_001\",\"HSPC_002\"],
@@ -21,6 +22,8 @@ namespace HelloWorld
 {
     class Program
     {
+        public static string server = "http://127.0.0.1:8001/";
+
         static void Main(string[] args)
         {
             string gene = args[0] ?? "ProcR";
@@ -33,13 +36,73 @@ namespace HelloWorld
             for (int i = 0; i < drcNames.Length; i++){
                 string[][] drc = GetDrcCoords( drcNames[i]);
                 Console.WriteLine( "DRC "+drcNames[i]+"(n="+ drc.Length +"): " + String.Join(" ", drc[0]) );
-            } 
+            }
 
+            StreamReader streamreader = new StreamReader(@"./selection1.txt");
+            char[] delimiter = new char[] { '\t' };
+            int lines = 0;
+            while (streamreader.Peek() > 0)
+            {
+                streamreader.ReadLine();
+                lines ++;
+            }
+            streamreader.Close();
+            streamreader = new StreamReader(@"selection1.txt");
+            string[][] datatable = new string[lines][];
+            lines=0;
+            while (streamreader.Peek() > 0)
+            {
+                datatable[lines++] = streamreader.ReadLine().Split(delimiter);
+            }
+            streamreader.Close();
 
+            Console.WriteLine( "use this grouping: "+String.Join(" ", datatable[0] ) );
+
+            string[] gois = getDifferentials( datatable );
+
+            Console.WriteLine( "differential genes :"+String.Join(" ", gois ) );
+
+            // And now stop the server - just a test not helpful for debugging ;-)
+            Stop();
         }
 
+        public static void Stop() {
+            // This will 
+            try { 
+                HttpWebRequest req = (HttpWebRequest)WebRequest.Create(Program.server+"shutdown");
+                WebResponse res = req.GetResponse();
+            }
+            catch  {
+                Console.WriteLine( "as expected - server is down." );
+            }
+        }
+
+        public static string[] getDifferentials(  string[][] selection ){
+            HttpWebRequest req = (HttpWebRequest)WebRequest.Create(Program.server+"HeatmapList");
+
+            string postData = "selection="+JsonConvert.SerializeObject( selection ) + "&" +
+            "num.sig=250&logfc.threshold=0.65&minPct=0.1";
+            //string postData = JsonConvert.SerializeObject( selection );
+            byte[] send = Encoding.Default.GetBytes(postData);
+
+            req.Method = "POST";
+            req.ContentType = "application/x-www-form-urlencoded";
+            req.ContentLength = send.Length;
+
+            Stream sout = req.GetRequestStream();
+            sout.Write(send, 0, send.Length);
+            sout.Flush();
+            sout.Close();
+
+            WebResponse res = req.GetResponse();
+            StreamReader sr = new StreamReader(res.GetResponseStream());
+
+            string[] genes = JsonConvert.DeserializeObject<string[]>( sr.ReadToEnd() );
+            return genes;
+        } 
+
         public static string[][] GetDrcCoords( string name){
-            HttpWebRequest req = (HttpWebRequest)WebRequest.Create("http://127.0.0.1:8000/get_coords");
+            HttpWebRequest req = (HttpWebRequest)WebRequest.Create(server+"get_coords");
             
             string postData = "name="+name;
             byte[] send = Encoding.Default.GetBytes(postData);
@@ -63,7 +126,7 @@ namespace HelloWorld
         } 
 
         public static string[] GetDrcNames(){
-            HttpWebRequest req = (HttpWebRequest)WebRequest.Create("http://127.0.0.1:8000/GetDrcNames");
+            HttpWebRequest req = (HttpWebRequest)WebRequest.Create(server+"GetDrcNames");
             
             WebResponse res = req.GetResponse();
             StreamReader sr = new StreamReader(res.GetResponseStream());
@@ -74,7 +137,7 @@ namespace HelloWorld
 
         public static string[][] GetExpression( string gene ) 
         {
-            HttpWebRequest req = (HttpWebRequest)WebRequest.Create("http://127.0.0.1:8000/GetExprs");
+            HttpWebRequest req = (HttpWebRequest)WebRequest.Create(server+"GetExprs");
             
             string postData = "name="+gene;
             byte[] send = Encoding.Default.GetBytes(postData);

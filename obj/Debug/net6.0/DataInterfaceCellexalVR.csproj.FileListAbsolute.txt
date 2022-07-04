@@ -18,3 +18,9 @@
 /home/med-sal/git_Projects/DataInterfaceCellexalVR/obj/Debug/net6.0/DataInterfaceCellexalVR.csproj.CopyComplete
 /home/med-sal/git_Projects/DataInterfaceCellexalVR/bin/Debug/net6.0/Namotion.Reflection.dll
 /home/med-sal/git_Projects/DataInterfaceCellexalVR/bin/Debug/net6.0/NJsonSchema.dll
+/home/med-sal/git_Projects/DataInterfaceCellexalVR/bin/Debug/net6.0/System.Web.Razor.dll
+/home/med-sal/git_Projects/DataInterfaceCellexalVR/bin/Debug/net6.0/System.Web.Helpers.dll
+/home/med-sal/git_Projects/DataInterfaceCellexalVR/bin/Debug/net6.0/System.Web.WebPages.Deployment.dll
+/home/med-sal/git_Projects/DataInterfaceCellexalVR/bin/Debug/net6.0/System.Web.WebPages.Razor.dll
+/home/med-sal/git_Projects/DataInterfaceCellexalVR/bin/Debug/net6.0/System.Web.WebPages.dll
+/home/med-sal/git_Projects/DataInterfaceCellexalVR/bin/Debug/net6.0/Microsoft.Web.Infrastructure.dll
