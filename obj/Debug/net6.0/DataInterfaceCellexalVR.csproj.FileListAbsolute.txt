@@ -13,3 +13,8 @@
 /home/med-sal/git_Projects/DataInterfaceCellexalVR/obj/Debug/net6.0/DataInterfaceCellexalVR.pdb
 /home/med-sal/git_Projects/DataInterfaceCellexalVR/obj/Debug/net6.0/DataInterfaceCellexalVR.genruntimeconfig.cache
 /home/med-sal/git_Projects/DataInterfaceCellexalVR/obj/Debug/net6.0/ref/DataInterfaceCellexalVR.dll
+/home/med-sal/git_Projects/DataInterfaceCellexalVR/bin/Debug/net6.0/Newtonsoft.Json.dll
+/home/med-sal/git_Projects/DataInterfaceCellexalVR/bin/Debug/net6.0/Newtonsoft.Json.Schema.dll
+/home/med-sal/git_Projects/DataInterfaceCellexalVR/obj/Debug/net6.0/DataInterfaceCellexalVR.csproj.CopyComplete
+/home/med-sal/git_Projects/DataInterfaceCellexalVR/bin/Debug/net6.0/Namotion.Reflection.dll
+/home/med-sal/git_Projects/DataInterfaceCellexalVR/bin/Debug/net6.0/NJsonSchema.dll
