@@ -10,3 +10,5 @@ session-log-for-session-api_implemntation.html
 TestSelection1.txt
 webapi.R
 *.Rout
+selection*.txt
+networks/

@@ -12,16 +12,25 @@ cd testServer
 Rscript startTheServer.R
 ``
 
-You of cause would also need the Microsoft dotnet - I use Ubuntu 22.04 and the dotnet with the 6.0 library. I also have some additions installed, but I do not remember how :-D
+You of cause would also need the Microsoft dotnet - I use Ubuntu 22.04 and the dotnet with the 6.0 library. I also have some additions installed:
+
+
+```
+dotnet add package Newtonsoft.Json
+dotnet add package Microsoft.AspNet.Razor
+```
 
 In the github path you can test the functionallity of the interface with
+
 
 ```
 dotnet build
 bin/Debug/net6.0/DataInterfaceCellexalVR Dntt
 ```
 
+
 This will write out the following lines:
+
 ```
 1529: HSPC_001 2.45111933485539
 DRC names: diffusion DDRtree tSNE

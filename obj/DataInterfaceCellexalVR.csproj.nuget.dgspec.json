@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/med-sal/git_Projects/DataInterfaceCellexalVR/DataInterfaceCellexalVR.csproj": {}
+    "/home/stefan/git/DataInterfaceCellexalVR/DataInterfaceCellexalVR.csproj": {}
   },
   "projects": {
-    "/home/med-sal/git_Projects/DataInterfaceCellexalVR/DataInterfaceCellexalVR.csproj": {
+    "/home/stefan/git/DataInterfaceCellexalVR/DataInterfaceCellexalVR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/med-sal/git_Projects/DataInterfaceCellexalVR/DataInterfaceCellexalVR.csproj",
+        "projectUniqueName": "/home/stefan/git/DataInterfaceCellexalVR/DataInterfaceCellexalVR.csproj",
         "projectName": "DataInterfaceCellexalVR",
-        "projectPath": "/home/med-sal/git_Projects/DataInterfaceCellexalVR/DataInterfaceCellexalVR.csproj",
-        "packagesPath": "/home/med-sal/.nuget/packages/",
-        "outputPath": "/home/med-sal/git_Projects/DataInterfaceCellexalVR/obj/",
+        "projectPath": "/home/stefan/git/DataInterfaceCellexalVR/DataInterfaceCellexalVR.csproj",
+        "packagesPath": "/home/stefan/.nuget/packages/",
+        "outputPath": "/home/stefan/git/DataInterfaceCellexalVR/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/med-sal/.nuget/NuGet/NuGet.Config"
+          "/home/stefan/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -38,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNet.Razor": {
+              "target": "Package",
+              "version": "[3.2.9, )"
+            },
             "Microsoft.AspNet.WebPages": {
               "target": "Package",
               "version": "[3.2.9, )"
@@ -45,6 +49,10 @@
             "NJsonSchema": {
               "target": "Package",
               "version": "[10.7.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             },
             "Newtonsoft.Json.Schema": {
               "target": "Package",
