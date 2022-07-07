@@ -73,16 +73,51 @@ namespace DataInterfaceCellexalVR
             string response = LogScreeshotHttp( "test.png" );
 
             Console.WriteLine("log screenshot response :" + response);
+
+            string[][] metaC = GetMetaCell();
+            Console.WriteLine("meta.cell (n=" + metaC.Length + "): " + string.Join(" ", metaC[0]));
+
+            string[][] index = GetIndex();
+            Console.WriteLine("index (n=" + index.Length + "): " + string.Join(" ", index[0]));
+
             // And now stop the server - just a test not helpful for debugging ;-)
             Stop();
             
         }
 
+        protected static string[][] GetMetaCell()  
+        {  
+            HttpWebRequest req = (HttpWebRequest)WebRequest.Create(server +"get_metacell");
+
+            WebResponse res = req.GetResponse();
+            StreamReader sr = new StreamReader(res.GetResponseStream());
+
+            string[] array = JsonConvert.DeserializeObject<string[]>(sr.ReadToEnd());
+            string[][] result = JsonConvert.DeserializeObject<string[][]>(array[0]);
+
+            return result;
+        } 
+
+
+        protected static string[][] GetIndex()  
+        {  
+
+            HttpWebRequest req = (HttpWebRequest)WebRequest.Create(server +"get_index");
+
+            WebResponse res = req.GetResponse();
+            StreamReader sr = new StreamReader(res.GetResponseStream());
+
+            string[] array = JsonConvert.DeserializeObject<string[]>(sr.ReadToEnd());
+            string[][] result = JsonConvert.DeserializeObject<string[][]>(array[0]);
+
+            return result;
+        } 
+
         protected static string GetBase64StringForImage(string imgPath)  
         {  
             byte[] imageBytes = System.IO.File.ReadAllBytes(imgPath);  
             string base64String = Convert.ToBase64String(imageBytes);
-            Console.WriteLine("GetBase64StringForImage base64 encoded: " + base64String);
+            //Console.WriteLine("GetBase64StringForImage base64 encoded: " + base64String);
             return base64String;
         } 
 
