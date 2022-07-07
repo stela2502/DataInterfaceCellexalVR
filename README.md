@@ -42,7 +42,7 @@ differential genes :["Pigq","Bag2","Smim13","Tnfaip2","Minpp1","B3galnt2","Ppp2r
 as expected - server is down.
 ```
 
-There is more output from the script now that I worde more on that package.
+There is more output from the script now that I added more to that package.
 Check it out yourself!
- 
+
 This interface seams to be pretty complete to me.
