@@ -10,7 +10,7 @@ Afterwards you should start the R server by
 ```
 cd testServer 
 Rscript startTheServer.R
-``
+```
 
 You of cause would also need the Microsoft dotnet - I use Ubuntu 22.04 and the dotnet with the 6.0 library. I also have some additions installed:
 
