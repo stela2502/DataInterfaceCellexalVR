@@ -2216,19 +2216,19 @@
     ]
   },
   "packageFolders": {
-    "/home/stefan/.nuget/packages/": {}
+    "/home/med-sal/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/stefan/git/DataInterfaceCellexalVR/DataInterfaceCellexalVR.csproj",
+      "projectUniqueName": "/home/med-sal/git_Projects/DataInterfaceCellexalVR/DataInterfaceCellexalVR.csproj",
       "projectName": "DataInterfaceCellexalVR",
-      "projectPath": "/home/stefan/git/DataInterfaceCellexalVR/DataInterfaceCellexalVR.csproj",
-      "packagesPath": "/home/stefan/.nuget/packages/",
-      "outputPath": "/home/stefan/git/DataInterfaceCellexalVR/obj/",
+      "projectPath": "/home/med-sal/git_Projects/DataInterfaceCellexalVR/DataInterfaceCellexalVR.csproj",
+      "packagesPath": "/home/med-sal/.nuget/packages/",
+      "outputPath": "/home/med-sal/git_Projects/DataInterfaceCellexalVR/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/stefan/.nuget/NuGet/NuGet.Config"
+        "/home/med-sal/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -2297,7 +2297,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Das Paket \"Microsoft.AspNet.Razor 3.2.9\" wurde nicht mit dem Projektzielframework \"net6.0\", sondern mit \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
+      "message": "Package 'Microsoft.AspNet.Razor 3.2.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.Razor",
       "targetGraphs": [
         "net6.0"
@@ -2307,7 +2307,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Das Paket \"Microsoft.AspNet.WebPages 3.2.9\" wurde nicht mit dem Projektzielframework \"net6.0\", sondern mit \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
+      "message": "Package 'Microsoft.AspNet.WebPages 3.2.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.WebPages",
       "targetGraphs": [
         "net6.0"
@@ -2317,7 +2317,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Das Paket \"Microsoft.Web.Infrastructure 1.0.0\" wurde nicht mit dem Projektzielframework \"net6.0\", sondern mit \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
+      "message": "Package 'Microsoft.Web.Infrastructure 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.Web.Infrastructure",
       "targetGraphs": [
         "net6.0"

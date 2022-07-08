@@ -46,3 +46,30 @@ There is more output from the script now that I added more to that package.
 Check it out yourself!
 
 This interface seams to be pretty complete to me.
+
+
+# Outlook
+
+This example here is not fit for CellexalVR as the web lib used here can not yeald which would render the VR unresponsive during a request. And this is of cause not an option. To actually integrate it into CellexalVR I need to use the [Unity network class](https://docs.unity3d.com/ScriptReference/Networking.UnityWebRequest.html).
+
+Probably like that [https://stackoverflow.com/questions/43595004/yielding-on-unitywebrequests-send-makes-two-calls-instead-of-just-one)(stackoverlow post).
+
+```
+//UNITY C# REQUEST
+IEnumerator RequestRoutine () {
+    using ( UnityWebRequest req = UnityWebRequest.Get ( "http://localhost:8080/blablabla" ) ) {
+        yield return req.Send ();
+
+        yield return req.isDone;
+        Debug.Log ( "is done" );
+    }
+}
+
+//NODE.JS server
+app.get('/blablabla', (req, res) => {
+    console.log('request received')
+    res.end()
+})
+```
+
+But for that to be possible I need a Unity project where I can add my code. And CellexalVR does not even load on Linux. It is stuck in "Initial Asset Database Refresh". Whichever unity version I try...

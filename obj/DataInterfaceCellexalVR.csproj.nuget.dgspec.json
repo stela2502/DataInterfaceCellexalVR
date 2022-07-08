@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/stefan/git/DataInterfaceCellexalVR/DataInterfaceCellexalVR.csproj": {}
+    "/home/med-sal/git_Projects/DataInterfaceCellexalVR/DataInterfaceCellexalVR.csproj": {}
   },
   "projects": {
-    "/home/stefan/git/DataInterfaceCellexalVR/DataInterfaceCellexalVR.csproj": {
+    "/home/med-sal/git_Projects/DataInterfaceCellexalVR/DataInterfaceCellexalVR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/stefan/git/DataInterfaceCellexalVR/DataInterfaceCellexalVR.csproj",
+        "projectUniqueName": "/home/med-sal/git_Projects/DataInterfaceCellexalVR/DataInterfaceCellexalVR.csproj",
         "projectName": "DataInterfaceCellexalVR",
-        "projectPath": "/home/stefan/git/DataInterfaceCellexalVR/DataInterfaceCellexalVR.csproj",
-        "packagesPath": "/home/stefan/.nuget/packages/",
-        "outputPath": "/home/stefan/git/DataInterfaceCellexalVR/obj/",
+        "projectPath": "/home/med-sal/git_Projects/DataInterfaceCellexalVR/DataInterfaceCellexalVR.csproj",
+        "packagesPath": "/home/med-sal/.nuget/packages/",
+        "outputPath": "/home/med-sal/git_Projects/DataInterfaceCellexalVR/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/stefan/.nuget/NuGet/NuGet.Config"
+          "/home/med-sal/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
